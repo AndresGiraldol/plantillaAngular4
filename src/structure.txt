@@ -1,0 +1,26 @@
+app: contiene la lógica de la aplicación angular
+
+--pages: Contiene los componentes que se difirieron el el archivo de routing y actúan como como agrupadores de otros componentes
+----component-page: contiene los componente utilizados en una única página, pueden temeter dependencias externas para funcionar
+
+--router: Módulo de configuración para el enrutamiento de la aplicación.
+
+--business-model: Agrupa clases y lógica necesaria el funcionamiento de la aplicación-
+----interfaces: contiene las interfaces utilizadas en la aplicación
+----services: Elementos de tipo.services.ts que realiza peticiones a apis externas
+
+--commons: Conjunto de métodos que pueden ser utilizados en toda la aplicación
+----animations: Archivos con extensión .animation.ts
+----constants: Archivos .ts con definiciones de variables “cost” para la configuración de la aplicación, su valor nunca cambia
+----directives: Archivos .directive.ts utilizados en toda la aplicación
+----pipes: Archivos .pipe.ts filtros
+----tools: Archivos .services.ts servicios que no realizan consumos de apis externas pero contiene lógica necesaria para el funcionamiento de la aplicación
+
+--components: Elementos que pueden ser reutilizados en toda la aplicación, no perteneces a ninguna página o característica en específico, no tienen dependencia externas para funcionar
+
+general-styles: Contiene la estructura itcss para el manejo de css global
+--Settings: fuentes y variables
+--Tools – mixins y funciones
+--Generic – Librerías de normalización de css normaize.css - reset.csss, etc
+--Elements – Estilos para etiquetas html (sin selectores, ids, data, etc)
+--Components – clases o estilos de utilizada, pueden ser utilizadas en toda la aplicación
